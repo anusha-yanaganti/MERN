@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Students Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        /* header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        } */
+        
+/* Header Section */
+header {
+    position: relative;
+    width: 100%;
+    background-color: #003366;
+}
+
+.header-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+nav {
+    background-color: #003366;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover, .active {
+    color: #FFD700;
+}
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        p {
+            color: #333;
+            text-align: center;
+        }
+        
+        .club, .event {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .club img, .event img {
+            width: 200px;
+            height: 150px;
+            border-radius: 10px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        .details {
+            flex: 1;
+        }
+
+        .details p {
+            color: #555;
+        }
+
+/* Footer Section */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+        @media (max-width: 768px) {
+            .club, .event {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .club img, .event img {
+                margin-bottom: 15px;
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- <header>
+        <h1>Welcome to [Your College Name] Students Page</h1>
+        <p>Explore our clubs and events</p>
+    </header> -->
+     <!-- Header Section -->
+     <header>
+        <img src="https://th.bing.com/th/id/R.58d64d89eba450a43fd4282775e0ac4b?rik=8AvL4EJ%2bU1LuWA&riu=http%3a%2f%2fwww.pvpsiddhartha.ac.in%2fnew_images%2fhead.jpg&ehk=thIpMZpxadsWsNdvTnhBDZbBfECkF8ZyCxZIK8aaYw8%3d&risl=&pid=ImgRaw&r=0" alt="College Header Image" class="header-img">
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="departments.html" class="active">Departments</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="student_corner.html">Student Corner</a></li>
+                <li><a href="curriculum.html">Curriculum</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Welcome to [Your College Name] Students Page</h1>
+    <p>Explore our clubs and events</p>
+    <div class="container">
+        <h2>Clubs</h2>
+        <div class="club">
+            <img src="club1.jpg" alt="Science Club">
+            <div class="details">
+                <h3>Science Club</h3>
+                <p>Our Science Club encourages students to explore the wonders of science through experiments, workshops, and innovative projects.</p>
+            </div>
+        </div>
+
+        <div class="club">
+            <img src="club2.jpg" alt="Drama Club">
+            <div class="details">
+                <h3>Drama Club</h3>
+                <p>The Drama Club is a platform for students to showcase their acting talents and participate in theatrical performances and events.</p>
+            </div>
+        </div>
+
+        <h2>Events</h2>
+        <div class="event">
+            <img src="event1.jpg" alt="Tech Fest">
+            <div class="details">
+                <h3>Tech Fest 2024</h3>
+                <p>Join us for a day full of technology, innovation, and workshops. Participate in coding competitions and win exciting prizes!</p>
+            </div>
+        </div>
+
+        <div class="event">
+            <img src="event2.jpg" alt="Cultural Night">
+            <div class="details">
+                <h3>Cultural Night</h3>
+                <p>Celebrate the diversity of our college through dance, music, and delicious food at our annual Cultural Night event.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 [Your College Name]. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
