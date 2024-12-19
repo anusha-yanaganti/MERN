@@ -3,26 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>College Students Page</title>
+    <title>Student Corner</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f9;
+            color: #333;
         }
 
-        /* header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 15px 20px;
-            text-align: center;
-        } */
         
 /* Header Section */
 header {
-    position: relative;
-    width: 100%;
     background-color: #003366;
 }
 
@@ -57,131 +50,139 @@ nav ul li a:hover, .active {
     color: #FFD700;
 }
 
+
+
+        /* anu h1 {
+            background-color: #0056a3;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        anu h1 {
+            margin: 0;
+            font-size: 2rem;
+        } */
+
         .container {
+            width: 90%;
+            margin: 2rem auto;
             max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
+            /* background: #fff; */
+            padding: 2rem;
+            /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
         }
 
-        h1, h2 {
-            color: #333;
+        .intro {
             text-align: center;
+            margin-bottom: 2rem;
         }
 
-        p {
-            color: #333;
-            text-align: center;
+        .intro img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 8px;
         }
-        
-        .club, .event {
+
+        .content {
             display: flex;
             flex-wrap: wrap;
-            margin-bottom: 20px;
+            gap: 2rem;
         }
 
-        .club img, .event img {
-            width: 200px;
-            height: 150px;
-            border-radius: 10px;
-            object-fit: cover;
-            margin-right: 20px;
-        }
-
-        .details {
+        .content .section {
             flex: 1;
+            min-width: 300px;
         }
 
-        .details p {
-            color: #555;
+        .section h2 {
+            color: #0056a3;
+            margin-bottom: 0.5rem;
         }
 
-/* Footer Section */
-footer {
-    background-color: #003366;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-}
+        .section ul {
+            list-style: none;
+            padding: 0;
+        }
 
-footer p {
-    margin: 5px 0;
-}
+        .section ul li {
+            background: #87a1d0;
+            margin: 0.5rem 0;
+            padding: 0.8rem;
+            border-radius: 5px;
+        }
 
-        @media (max-width: 768px) {
-            .club, .event {
-                flex-direction: column;
-                align-items: center;
-            }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
 
-            .club img, .event img {
-                margin-bottom: 15px;
-                margin-right: 0;
-            }
+        footer p {
+            margin: 0;
         }
     </style>
 </head>
 <body>
-    <!-- <header>
-        <h1>Welcome to [Your College Name] Students Page</h1>
-        <p>Explore our clubs and events</p>
-    </header> -->
-     <!-- Header Section -->
-     <header>
+    <!-- Header Section -->
+    <header>
         <img src="https://th.bing.com/th/id/R.58d64d89eba450a43fd4282775e0ac4b?rik=8AvL4EJ%2bU1LuWA&riu=http%3a%2f%2fwww.pvpsiddhartha.ac.in%2fnew_images%2fhead.jpg&ehk=thIpMZpxadsWsNdvTnhBDZbBfECkF8ZyCxZIK8aaYw8%3d&risl=&pid=ImgRaw&r=0" alt="College Header Image" class="header-img">
         <nav>
             <ul>
                 <li><a href="main.html">Home</a></li>
-                <li><a href="departments.html" class="active">Departments</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="departments.html">Departments</a></li>
+                <li><a href="about.html" class="active">About</a></li>
                 <li><a href="student_corner.html">Student Corner</a></li>
                 <li><a href="curriculum.html">Curriculum</a></li>
             </ul>
         </nav>
     </header>
-    <h1>Welcome to [Your College Name] Students Page</h1>
-    <p>Explore our clubs and events</p>
+    <!-- <div class="anu">
+        <h1>Student Corner</h1>
+    <div> -->
+
     <div class="container">
-        <h2>Clubs</h2>
-        <div class="club">
-            <img src="club1.jpg" alt="Science Club">
-            <div class="details">
-                <h3>Science Club</h3>
-                <p>Our Science Club encourages students to explore the wonders of science through experiments, workshops, and innovative projects.</p>
-            </div>
+        <div class="intro">
+            <p>Welcome to the Student Corner! This is your go-to space for all college events, clubs, and activities.</p>
+            <img src="https://www.pvpsiddhartha.ac.in/student_council/images/student_council9.jpg" alt="College Event Image">
         </div>
 
-        <div class="club">
-            <img src="club2.jpg" alt="Drama Club">
-            <div class="details">
-                <h3>Drama Club</h3>
-                <p>The Drama Club is a platform for students to showcase their acting talents and participate in theatrical performances and events.</p>
+        <div class="content">
+            <div class="section">
+                <h2>Upcoming Events</h2>
+                <ul>
+                    <li>Annual Tech Fest - Jan 25th, 2025</li>
+                    <li>Cultural Evening - Feb 10th, 2025</li>
+                    <li>Sports Meet - March 15th, 2025</li>
+                </ul>
             </div>
-        </div>
 
-        <h2>Events</h2>
-        <div class="event">
-            <img src="event1.jpg" alt="Tech Fest">
-            <div class="details">
-                <h3>Tech Fest 2024</h3>
-                <p>Join us for a day full of technology, innovation, and workshops. Participate in coding competitions and win exciting prizes!</p>
+            <div class="section">
+                <h2>Active Clubs</h2>
+                <ul>
+                    <li>Robotics Club</li>
+                    <li>Photography Club</li>
+                    <li>Literature Society</li>
+                    <li>Environmental Club</li>
+                </ul>
             </div>
-        </div>
 
-        <div class="event">
-            <img src="event2.jpg" alt="Cultural Night">
-            <div class="details">
-                <h3>Cultural Night</h3>
-                <p>Celebrate the diversity of our college through dance, music, and delicious food at our annual Cultural Night event.</p>
+            <div class="section">
+                <h2>Highlights</h2>
+                <ul>
+                    <li>State-Level Debate Champion 2024</li>
+                    <li>Winners of Inter-College Coding Hackathon</li>
+                    <li>Platinum Sponsorship for Tech Summit</li>
+                </ul>
             </div>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2024 [Your College Name]. All Rights Reserved.</p>
+        <p>&copy; 2024 Your College Name. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
